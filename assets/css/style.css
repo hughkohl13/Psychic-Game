@@ -1,0 +1,50 @@
+
+.form {
+    background: #FBFCE4;
+    color: black;
+    opacity: 0.5;
+    font-size: 24px;
+    font-family: 'Charmonman', cursive;
+    margin-left: 350px;
+    width: 500px;
+    border: 2px solid black;
+    text-align: center;
+    padding: 20px;
+}
+
+.underscore {
+    font-size: 30px;
+}
+
+#form1 {
+}
+
+button {
+    font-family: 'Charmonman', cursive;
+}
+
+body {
+    background: black;
+    background-image: url("../images/HalloweenHead.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+}
+
+text {
+    color: #FBFCE4;
+    font-family: 'Charmonman', cursive;
+    font-size: 50px;
+    fill: #FBFCE4;
+    text-align: center;
+}
+
+path {
+    fill: transparent;
+}
+
+img {
+    object-position: center;
+    width: 100%;
+}
