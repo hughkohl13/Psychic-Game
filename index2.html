@@ -1,0 +1,175 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Headless Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+
+    <svg viewBox="0 0 500 150">
+        <path id="curve" d="M73.2,135.6c4-6.1,65.5-96.8,145.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+        <text width="500">
+          <textPath xlink:href="#curve">
+            Headless Hangman
+          </textPath>
+        </text>
+    </svg>
+
+<div class="form">
+        <div class="prompt"></div>
+        <div id="underscore"></div>
+
+    <div class="container">
+        <button type="button" id="A" value="submit">A</button><br>
+        <button type="button" id="B" value="submit">B</button><br>
+        <button type="button" id="C" value="submit">C</button><br>
+        <button type="button" id="D" value="submit">D</button><br>
+        <button type="button" id="E" value="submit">E</button><br>
+        <button type="button" id="F" value="submit">F</button><br>
+        <button type="button" id="G" value="submit">G</button><br>
+        <button type="button" id="H" value="submit">H</button><br>
+        <button type="button" id="I" value="submit">I</button><br>
+        <button type="button" id="J" value="submit">J</button><br>
+        <button type="button" id="K" value="submit">K</button><br>
+        <button type="button" id="L" value="submit">L</button><br>
+        <button type="button" id="M" value="submit">M</button><br>
+        <button type="button" id="N" value="submit">N</button><br>
+        <button type="button" id="O" value="submit">O</button><br>
+        <button type="button" id="P" value="submit">P</button><br>
+        <button type="button" id="Q" value="submit">Q</button><br>
+        <button type="button" id="R" value="submit">R</button><br>
+        <button type="button" id="S" value="submit">S</button><br>
+        <button type="button" id="T" value="submit">T</button><br>
+        <button type="button" id="U" value="submit">U</button><br>
+        <button type="button" id="V" value="submit">V</button><br>
+        <button type="button" id="W" value="submit">W</button><br>
+        <button type="button" id="X" value="submit">X</button><br>
+        <button type="button" id="Y" value="submit">Y</button><br>
+        <button type="button" id="Z" value="submit">Z</button><br>
+    </div>
+
+        
+        
+        <div id="wins"></div>
+        <div id="guesses"></div>
+        <div id="image-div"></div>
+    </div>
+
+    <script type="text/javascript">
+        
+        var quizWords = [
+            "treat",
+            "corpse",
+            "pumpkin",
+        ]
+        
+        
+
+
+    $(document).ready(function() {
+        
+        var wins = 0;
+        var guesses = 8;
+        var ranWord = quizWords[Math.floor(Math.random() * quizWords.length)];
+
+        var answerArray = [];
+        for(var i = 0; i < ranWord.length; i++){
+            answerArray[i] = "_";
+        }
+
+        $("#underscore").html(answerArray.join(" "));
+
+
+        $("#A").on("click", function() {
+            $("#underscore").html("A");
+        });
+        $("#B").on("click", function() {
+            $("#underscore").html("B");
+        });
+        $("#C").on("click", function() {
+            $("#underscore").html("C");
+        });
+        $("#D").on("click", function() {
+            $("#underscore").html("D");
+        });
+        $("#E").on("click", function() {
+            $("#underscore").html("E");
+        });
+        $("#F").on("click", function() {
+            $("#underscore").html("F");
+        });
+        $("#G").on("click", function() {
+            $("#underscore").html("G");
+        });
+        $("#H").on("click", function() {
+            $("#underscore").html("H");
+        });
+        $("#I").on("click", function() {
+            $("#underscore").html("I");
+        });
+        $("#J").on("click", function() {
+            $("#underscore").html("J");
+        });
+        $("#K").on("click", function() {
+            $("#underscore").html("K");
+        });
+        $("#L").on("click", function() {
+            $("#underscore").html("L");
+        });
+        $("#M").on("click", function() {
+            $("#underscore").html("M");
+        });
+        $("#N").on("click", function() {
+            $("#underscore").html("N");
+        });
+        $("#O").on("click", function() {
+            $("#underscore").html("O");
+        });
+        $("#P").on("click", function() {
+            $("#underscore").html("P");
+        });
+        $("#Q").on("click", function() {
+            $("#underscore").html("Q");
+        });
+        $("#R").on("click", function() {
+            $("#underscore").html("R");
+        });
+        $("#S").on("click", function() {
+            $("#underscore").html("S");
+        });
+        $("#T").on("click", function() {
+            $("#underscore").html("T");
+        });
+        $("#U").on("click", function() {
+            $("#underscore").html("U");
+        });
+        $("#V").on("click", function() {
+            $("#underscore").html("V");
+        });
+        $("#W").on("click", function() {
+            $("#underscore").html("W");
+        });
+        $("#X").on("click", function() {
+            $("#underscore").html("X");
+        });
+        $("#Y").on("click", function() {
+            $("#underscore").html("Y");
+        });
+        $("#Z").on("click", function() {
+            $("#underscore").html("Z");
+        });
+
+        });
+    
+    </script>
+
+
+
+</body>
+</html>

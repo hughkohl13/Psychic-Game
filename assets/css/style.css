@@ -2,7 +2,8 @@
 .form {
     background: #FBFCE4;
     color: black;
-    opacity: 0.5;
+    /* opacity: 0.5; */
+    background: rgba(255, 231, 178, 0.678);
     font-size: 24px;
     font-family: 'Charmonman', cursive;
     margin-left: 350px;
@@ -12,8 +13,13 @@
     padding: 20px;
 }
 
-.underscore {
-    font-size: 30px;
+#underscore {
+    font-size: 70px;
+}
+
+#guess {
+    background: black;
+    color: #FBFCE4;
 }
 
 #form1 {
@@ -21,6 +27,7 @@
 
 button {
     font-family: 'Charmonman', cursive;
+    background: bisque;
 }
 
 body {
@@ -47,4 +54,11 @@ path {
 img {
     object-position: center;
     width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 57fr);
+    row-gap: 10px;
+    margin-left: 8%;
 }
